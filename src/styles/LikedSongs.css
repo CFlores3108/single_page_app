@@ -1,0 +1,94 @@
+.liked-songs-container {
+  background-color: #181818;
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 80px;
+  overflow-y: auto;
+  flex: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-heart {
+  width: 10rem;
+  height: 10rem;
+  background: url('https://i1.sndcdn.com/artworks-y6qitUuZoS6y8LQo-5s2pPA-t500x500.jpg') no-repeat center center;
+  background-size: contain;
+  margin-right: 1rem;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.header p {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.play-button {
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.song-list {
+  margin-top: 20px;
+}
+
+.song-list-header, .song-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.song-list-header {
+  font-weight: bold;
+  color: #b3b3b3;
+}
+
+.song-item {
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.song-item:hover {
+  background-color: #282828;
+  color: #1db954;
+}
+
+.song-item span {
+  padding: 5px 0;
+}
+
+.song-details {
+  display: flex;
+  align-items: center;
+}
+
+.song-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.artist-name {
+  font-size: 14px;
+  color: #b3b3b3;
+}
