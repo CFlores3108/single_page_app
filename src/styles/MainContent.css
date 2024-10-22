@@ -1,0 +1,44 @@
+.main-content-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #181818;
+    color: #fff;
+    overflow-y: auto;  /* Permite desplazamiento vertical */
+    width: 100%;  /* Asegura que ocupe el 100% del ancho */
+    box-sizing: border-box;  /* Incluye el padding en el ancho total */
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 24px;  /* Aumentar el tamaño de fuente para mayor legibilidad */
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  /* Columnas responsivas */
+    gap: 20px;  /* Espacio entre las tarjetas */
+}
+
+.playlist-card {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;  /* Agrega una animación al pasar el ratón */
+}
+
+.playlist-card:hover {
+    transform: scale(1.05);  /* Efecto de aumento al pasar el ratón */
+}
+
+.playlist-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;  /* Mantiene la proporción de la imagen */
+}
+
+.playlist-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;  /* Color más suave para el texto */
+}
